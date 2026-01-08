@@ -5,8 +5,8 @@ import Image from 'next/image';
 
 const Logo = () => {
     return (
-        <Link href={'/'}>
-            <h1 className='w-90'>
+        <Link href={'/'} className='shrink'>
+            <h1>
                 <Image src={imgLogo} alt='Logo company'/>
             </h1>
         </Link>
