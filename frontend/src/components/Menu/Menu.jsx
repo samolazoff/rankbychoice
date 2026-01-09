@@ -1,4 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
+
+import imgProfile from '../../../public/nav/profile.png';
 
 const Menu = ()=> {
 
@@ -8,7 +11,7 @@ const Menu = ()=> {
         {title: "Pricing", href: "#pricing"}
     ];
 
-    const user = false;
+    const user = true;
 
     return (
         <nav className="">
@@ -30,8 +33,8 @@ const Menu = ()=> {
                 <li className="hidden md:flex flex-row gap-4 text-xl text-(--color-primery)">
                     {
                         user?(
-                            <button className="flex flex-row gap-4 text-xl px-2 py-2">
-                                <img src="" alt="" />
+                            <button className="flex flex-row items-end  gap-4 text-xl px-2 py-2">
+                                <Image src={imgProfile} alt="profile img" width={48} height={48} />
                                 <span>User</span>
                             </button>
 
