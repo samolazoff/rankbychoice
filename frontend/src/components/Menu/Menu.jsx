@@ -3,6 +3,8 @@ import Image from "next/image";
 
 import imgProfile from '../../../public/nav/profile.png';
 
+import Burger from "../Burger/Burger";
+
 const Menu = ()=> {
 
     const links = [
@@ -52,6 +54,7 @@ const Menu = ()=> {
                    
                 </li>
             </ul>
+            <Burger></Burger>
         </nav>
     );
 };
