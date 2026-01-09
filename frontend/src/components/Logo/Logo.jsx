@@ -10,6 +10,7 @@ const Logo = () => {
                 <Image src={imgLogo} alt='Logo company'/>
             </h1>
         </Link>
+        
     );
 };
 
