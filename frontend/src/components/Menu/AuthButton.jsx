@@ -24,11 +24,16 @@ const AuthButton = ({user}) => {
                 </ul>
             ):(
                 <ul className="menu-login flex flex-row gap-4 text-xl text-(--color-main)"> 
-                    <li className="px-2 py-2 hover:opacity-30 duration-300">
-                        <Link href={'/login'}>Sign In</Link>
+                    <li className="">
+                        <Link href={'/login'} className="rounded-md px-6 py-3 text-lg text-(--color-main) transition hover:opacity-30" >Sign In</Link>
                     </li>
-                    <li className="px-2 py-2 border rounded hover:opacity-30 duration-300">
-                        <Link href={'/register'}>Get started</Link>
+                    <li className="">
+                        <Link
+                            href="/register"
+                            className="rounded-md bg-indigo-600 px-6 py-3 text-lg font-semibold text-white hover:bg-indigo-500 transition"
+                        >
+                            Get started
+                        </Link>
                     </li>
                 </ul>
             )
