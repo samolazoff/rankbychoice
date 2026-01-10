@@ -12,7 +12,7 @@ import './Header.css'
 
 const Header = () => {
     const [open, setOpen] = useState(false);
-    const [user, setUser] = useState(true);
+    const [user, setUser] = useState(false);
 
     return (
         <header className="app-header px-5 py-2.5 h-25 relative">
