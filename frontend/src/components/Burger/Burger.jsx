@@ -1,16 +1,10 @@
-"use client"
-
-import { useState } from "react"
-
-const Burger = () => {
-
-     const [open, setOpen] = useState(false);
+const Burger = ({ open, setOpen }) => {
 
     return (
-         <button
-          onClick={() => setOpen(!open)}
-          className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-(--color-main) hover:opacity-30"
-          aria-label="Open menu"
+        <button
+            onClick={() => setOpen(!open)}
+            className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-(--color-main) hover:opacity-30 relative z-10"
+            aria-label="Open menu"
         >
             <svg
                 className="h-10 w-10"
