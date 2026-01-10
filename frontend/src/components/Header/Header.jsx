@@ -1,5 +1,7 @@
 "use client";
 
+import './Header.css';
+
 import { useState } from "react";
 
 import Logo from "../Logo/Logo";
@@ -8,14 +10,12 @@ import AuthButton from "../Menu/AuthButton";
 import Burger from "../Burger/Burger";
 import NavMobile from "../Menu/NavMobile";
 
-import './Header.css'
-
 const Header = () => {
     const [open, setOpen] = useState(false);
     const [user, setUser] = useState(false);
 
     return (
-        <header className="app-header px-5 py-2.5 h-25 relative">
+        <header className="app-header px-5 py-2.5 h-25 relative bg-indigo-100">
             <NavMobile open={open} setOpen={setOpen} user={user}/>
             <div className="container mx-auto my-0 flex flex-row justify-between items-end relative z-10">
                 <Logo/>

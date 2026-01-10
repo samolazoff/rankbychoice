@@ -1,4 +1,4 @@
 .app-header, .menu-mobile{
-    background: -webkit-linear-gradient(90deg, #fafafa,#4f46e5);                   
-    background: linear-gradient(90deg, #fafafa,#4f46e5);
+    background: #EEF2FF;
+    background: linear-gradient(0deg,rgba(238, 242, 255, 1) 0%, rgba(224, 231, 255, 1) 100%);
 }

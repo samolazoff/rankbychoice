@@ -18,7 +18,7 @@ const NavMobile = ({open, setOpen, user}) => {
                         <li className="w-full">
                             <ul className="menu-login flex flex-row gap-4 w-full">
                                 <li>
-                                    <button className="flex flex-row items-end  gap-4 text-xl px-2 py-2 " onClick={() => setOpen(!open)}>
+                                    <button className="flex flex-row items-end  gap-4 text-xl px-2 py-2 text-(--color-main)" onClick={() => setOpen(!open)}>
                                         <Image src={imgProfile} alt="profile img" width={48} height={48} />
                                         <span>User</span>
                                     </button>
@@ -34,7 +34,7 @@ const NavMobile = ({open, setOpen, user}) => {
 
                     </ul>       
                 ):(
-                    <ul className="menu-login flex flex-row gap-4 text-xl text-(--color-primery)"> 
+                    <ul className="menu-login flex flex-row gap-4 text-xl text-(--color-main)"> 
                         <li className="px-2 py-2">
                             <Link href={'/login'}>Sign In</Link>
                         </li>
