@@ -1,22 +1,25 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function LoginForm() {
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
+  const router = useRouter();
 
   function handleSubmit(e) {
     e.preventDefault()
     setLoading(true)
 
-    // TODO: API call
+    // MOCK login
     setTimeout(() => {
-      setLoading(false)
-      alert("Logged in (mock)")
-    }, 1000)
-  };
+      localStorage.setItem("auth_token", "mock-token")
+      router.push("/dashboard")
+    }, 800)
+  }
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
